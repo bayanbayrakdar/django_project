@@ -17,5 +17,8 @@ urlpatterns = [
     path('all/',view_task, name='view_task'),
     path('update/<int:id>',update_task, name='update_task'),
     path('item/<int:id>/delete/',delete_task, name='delete_task'),
+    path('hello/',views.Hello.as_view(), name='hello'),
+    
+    path('deletetoken/<int:id>/', views.DeleteToken.as_view(), name='delete_token'),
 
 ]
